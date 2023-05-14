@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "tiny-grocery-store"
+version = "0.1.0"
+description = ""
+authors = ["Juliana Machado <jfcaiado@hotmail.com>"]
+readme = "README.md"
+packages = [{include = "tiny_grocery_store"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+uvicorn = {extras = ["standard"], version = "^0.22.0"}
+fastapi = "^0.95.1"
+sqlmodel = "^0.0.8"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
