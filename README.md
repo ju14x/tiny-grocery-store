@@ -18,3 +18,5 @@ To run this project, you need to have installed:
 ```sh
 docker compose up -d
 ```
+
+Access it at http://localhost:8000/docs for more info.
