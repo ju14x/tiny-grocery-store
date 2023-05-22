@@ -5,7 +5,7 @@ A grocery store's internal API system that manages transactions, inventory, bill
 To run this project, you need to have installed:
 
 - [Poetry](https://python-poetry.org/docs/)
-- [Docker](https://docs.docker.com/) and [Docker Compose](https://docs.docker.com/compose/) (for the database)
+- [Docker](https://docs.docker.com/) and [Docker Compose](https://docs.docker.com/compose/)
 
 > Project dependencies:
 
