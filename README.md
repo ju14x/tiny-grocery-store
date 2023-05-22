@@ -12,3 +12,9 @@ To run this project, you need to have installed:
 - `Python ^3.10`
 - `FastAPI`
 - `SQLModel`
+
+> How to run:
+
+```sh
+docker compose up -d
+```
