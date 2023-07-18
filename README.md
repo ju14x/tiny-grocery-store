@@ -9,9 +9,10 @@ To run this project, you need to have installed:
 
 > Project dependencies:
 
-- `Python ^3.10`
+- `Python ^3.11`
 - `FastAPI`
 - `SQLModel`
+- `Flet` 
 
 > How to run:
 
