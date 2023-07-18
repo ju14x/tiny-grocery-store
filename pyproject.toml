@@ -7,11 +7,11 @@ readme = "README.md"
 packages = []
 
 [tool.poetry.dependencies]
-python = "^3.10"
-uvicorn = {extras = ["standard"], version = "^0.22.0"}
-fastapi = "^0.95.1"
+python = "^3.11"
+uvicorn = "^0.22.0"
+fastapi = {extras = ["standard"], version = "^0.100.0"}
 sqlmodel = "^0.0.8"
-flet = "^0.7.1"
+flet = "^0.8.2"
 ipython = "^8.13.2"
 
 [tool.poetry.group.dev.dependencies]
