@@ -16,6 +16,7 @@ sqlalchemy = "^2.0.20"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.3.1"
+pytest-sugar = "^0.9.7"
 
 [build-system]
 requires = ["poetry-core"]
