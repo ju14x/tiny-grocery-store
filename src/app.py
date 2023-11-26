@@ -7,4 +7,3 @@ def create_app() -> FastAPI:
     """Creates the FastAPI application."""
     routes.init_app_routes(app)
     return app
-
