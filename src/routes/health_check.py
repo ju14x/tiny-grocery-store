@@ -7,4 +7,3 @@ router = APIRouter()
 def check_health():
     """Checks the app's current status."""
     return 'ok!'
-
