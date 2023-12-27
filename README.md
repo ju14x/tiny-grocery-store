@@ -11,7 +11,7 @@ To run this project, you need to have installed:
 
 - `Python ^3.11`
 - `FastAPI`
-- `SQLAlchemy`
+- `SQLModel`
 - `Flet` 
 
 > How to run:
