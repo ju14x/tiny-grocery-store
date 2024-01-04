@@ -10,7 +10,7 @@ packages = [{include = "src"}]
 python = "^3.11"
 uvicorn = "^0.25.0"
 fastapi = "^0.108.0"
-flet = "^0.17.0"
+flet = "^0.18.0"
 ipython = "^8.19.0"
 blue = "^0.9.1"
 pytest = "^7.4.3"
