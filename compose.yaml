@@ -8,4 +8,12 @@ services:
     restart: on-failure
     environment:
       - WATCHFILES_FORCE_POLLING=true
-
+  db:
+    image: postgres:latest
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=tgc
+    restart: on-failure
