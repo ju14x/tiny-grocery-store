@@ -5,15 +5,14 @@ ENV PYTHONDONTWRITEBYTECODE=1
 
 ENV PYTHONUNBUFFERED=1
 
-RUN pip install --upgrade pip
-RUN pip install poetry
+RUN pip install --upgrade pip && pip install poetry
 
 COPY . /tiny-grocery 
 
 WORKDIR /tiny-grocery
 
-RUN poetry install
+RUN poetry install --no-dev
 
-EXPOSE 8000
+EXPOSE 7267
 
-CMD ["poetry", "run", "gunicorn", "src.app:create_app", "-w", "4", "-k", "uvicorn.workers.UvicornWorker"]
+CMD poetry run gunicorn src.app:create_app --host 0.0.0.0 --port 7267 -w 2 -k uvicorn.workers.UvicornWorker --factory
