@@ -13,4 +13,4 @@ WORKDIR /tiny-grocery
 
 RUN poetry install --no-dev --no-root
 
-CMD poetry run uvicorn --factory src.app:create_app --host 0.0.0.0
+CMD uvicorn --factory src.app:create_app
