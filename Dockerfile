@@ -11,8 +11,8 @@ COPY . /tiny-grocery
 
 WORKDIR /tiny-grocery
 
-RUN poetry install --no-dev
+RUN poetry install --no-dev --no-root
 
 EXPOSE 7267
 
-CMD poetry run gunicorn src.app:create_app --host 0.0.0.0 --port 7267 -w 2 -k uvicorn.workers.UvicornWorker --factory
+CMD poetry run uvicorn --factory src.app:create_app --host 0.0.0.0 --port 7267
