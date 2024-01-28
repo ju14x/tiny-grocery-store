@@ -15,4 +15,4 @@ RUN poetry install --no-root --only main
 
 EXPOSE 8000
 
-CMD poetry run gunicorn src.app:create_app -w 4 -k uvicorn.workers.UvicornWorker --bind 0.0.0.0 --proxy-headers
+CMD poetry run gunicorn src.app:create_app -w 4 -k uvicorn.workers.UvicornWorker --bind 0.0.0.0
