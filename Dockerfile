@@ -15,4 +15,4 @@ RUN poetry install --no-root --only main
 
 EXPOSE 8000
 
-CMD poetry run gunicorn src.app:create_app
+CMD poetry run uvicorn src.app:create_app --host 0.0.0.0 --port $PORT
