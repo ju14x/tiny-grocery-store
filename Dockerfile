@@ -11,6 +11,8 @@ COPY . /tiny-grocery
 
 WORKDIR /tiny-grocery
 
-RUN poetry install --no-dev --no-root
+RUN poetry install --no-root --only main
 
-CMD uvicorn --factory src.app:create_app
+EXPOSE 8000
+
+CMD poetry run uvicorn --factory src.app:create_app --host 0.0.0.0 --port 8000
