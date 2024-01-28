@@ -1,6 +1,6 @@
 SRC_DIR := src
 TEST_DIR := tests
-PORT := 4000
+PORT := 8000
 
 .PHONY: install run run-dev test format
 
